@@ -55,7 +55,7 @@ Calico will be the networking (CNI) and network policy provider throughout your 
 let's deploy the lastest version of Calico operator by running the following command.
 
 ```
-kubectl create -f https://projectcalico.docs.tigera.io/manifests/tigera-operator.yaml
+kubectl create -f https://raw.githubusercontent.com/projectcalico/calico/v3.25.0/manifests/tigera-operator.yaml
 
 ```
 
@@ -168,7 +168,7 @@ calico-apiserver-86767b7946-77f6z   1/1     Running   0          19m
 Let's install Calico command line tool called "calicoctl" as a binary in our bastion host.
 
 ```
-curl -L https://github.com/projectcalico/calico/releases/download/v3.24.3/calicoctl-linux-amd64 -o calicoctl
+curl -L https://github.com/projectcalico/calico/releases/latest/download/calicoctl-linux-amd64 -o calicoctl
 ```
 ```
 chmod +x calicoctl
