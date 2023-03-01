@@ -118,7 +118,7 @@ ssh worker1
 Download `calicoctl` binary and make in executable. Please note that `calicoctl` uses Kubernetes kubeconfig file to authenticate to the cluster and run commands against the Kubernetes API. The kubeconfig file is already configured for you.
 
 ```
-curl -L https://github.com/projectcalico/calico/releases/download/v3.24.3/calicoctl-linux-amd64 -o calicoctl
+curl -L https://github.com/projectcalico/calico/releases/latest/download/calicoctl-linux-amd64 -o calicoctl
 chmod +x calicoctl
 sudo mv calicoctl /usr/local/bin
 
